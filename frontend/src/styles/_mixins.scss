@@ -1,0 +1,14 @@
+@mixin flex-center($gap: 15px) {
+	display: flex;
+	align-items: center;
+	gap: $gap;
+}
+@mixin nav-item {
+	color: black;
+	text-decoration: none;
+}
+@mixin nav-items($gap: 55px) {
+	display: flex;
+	align-items: center;
+	gap: $gap;
+}

@@ -1,0 +1,31 @@
+@import '../../styles/mixins';
+.header {
+	padding: 20px 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.nav-items {
+	@include nav-items(58px)
+
+}
+.nav-item {
+	@include nav-item
+}
+.nav-item:nth-child(4) {
+	background-color: #7c4ee4;
+	color: #fff;
+	border-radius: 8px;
+	padding: 16px 40px;
+	&:active {
+		color: #fff;
+	}
+}
+.nav-item:focus {
+	color: #7c4ee4;
+}
