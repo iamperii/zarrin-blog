@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+.blog-page-title {
+	width: 100%;
+	background-color: #fcf9f9;
+	padding: 75px 300px;
+	text-align: center;
+	@include flex-center(25px);
+}
+.content > h5 {
+	font-size: 16px;
+	color: #bbb;
+	letter-spacing: 10%;
+	line-height: 150%;
+}
+.content > h1 {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 64px;
+}
+.content > p {
+	margin-top: 20px;
+	line-height: 150%;
+	width: 90%;
+	align-self: center;
+}

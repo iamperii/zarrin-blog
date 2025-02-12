@@ -1,0 +1,61 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+.subscribe {
+	background-color: #7c4ee4;
+	color: white;
+	width: 100%;
+	padding: 100px 10vw;
+
+	@include flex-center(48px);
+	position: relative;
+	box-sizing: border-box;
+}
+.subscribe-title {
+	font-size: 52px;
+	line-height: 48px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 0.2px;
+	width: 65%;
+}
+.subscribe-form {
+	align-self: center;
+	display: flex;
+	gap: 20px;
+}
+.subscribe-form > input {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+.subscribe-form > button {
+	border-radius: 5px;
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 10px;
+	&:hover {
+		cursor: pointer;
+	}
+	&:active {
+		transform: scale(0.95);
+		//nese de
+	}
+}
+.subscribe-info {
+	line-height: 28px;
+	font-size: 16px;
+	color: #bbbbbb;
+	width: 45%;
+	text-align: center;
+}
+.vector {
+	position: absolute;
+	width: 40%;
+	left: -60px;
+	// height: 150px;
+	top: -300px;
+	z-index: 0;
+	// transform: translateX(50%);
+	clip-path: inset(63% 23% 0 0);
+}
