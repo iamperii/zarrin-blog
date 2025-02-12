@@ -1,9 +1,13 @@
-import React from 'react'
+import BlogPageTitle from '../components/BlogPageTitle/BlogPageTitle';
+import AllPost from '../components/Posts/AllPosts/AllPost';
 
 const Blogs = () => {
 	return (
-		<div>Blogs</div>
-	)
-}
+		<>
+			<BlogPageTitle />
+			<AllPost />
+		</>
+	);
+};
 
-export default Blogs
+export default Blogs;

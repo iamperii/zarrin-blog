@@ -1,9 +1,13 @@
-import React from 'react'
+import BlogDeatils from '../components/BlogDetails/BlogDeatils';
+import PopularPost from '../components/Posts/PopularPost/PopularPost';
 
 const SingleBlog = () => {
 	return (
-		<div>SingleBlog</div>
-	)
-}
+		<>
+			<BlogDeatils />
+			<PopularPost />
+		</>
+	);
+};
 
-export default SingleBlog
+export default SingleBlog;

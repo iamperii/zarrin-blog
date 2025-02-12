@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import FeaturePost from '../components/Posts/FeauturePost/FeaturePost';
+import RecentPost from '../components/Posts/RecentPost/RecentPost';
+import PopularPost from '../components/Posts/PopularPost/PopularPost';
 
 const Home = () => {
 	return (
-		<div>Home</div>
-	)
-}
+		<>
+			<FeaturePost />
+			<RecentPost />
+			<PopularPost />
+		</>
+	);
+};
 
-export default Home
+export default Home;
