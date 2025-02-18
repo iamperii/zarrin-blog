@@ -1,4 +1,6 @@
 @import '../../../styles/mixins';
+@import '../../../styles/variables';
+
 .card-section-first {
 	display: flex;
 	gap: 40px;
@@ -14,27 +16,35 @@
 	font-weight: 500;
 	color: #999999;
 }
-.card{
+.card {
 	width: 30%;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
-.card-title>h1{
+.card-title > h1 {
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 600;
 }
-.cards{
+.cards {
 	background-color: #fcf9f9;
 	display: flex;
 	gap: 40px;
 	flex-wrap: wrap;
-	padding: 20px 104px;
+	padding: 50px 104px;
 }
-.card a{
-	color:#7C4EE4;
+.card a {
+	color: #7c4ee4;
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 150%;
+}
+
+.card-desc > p {
+	color: #666666;
+	font-size: 16px;
+}
+.loading {
+	text-align: center;
 }
