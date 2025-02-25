@@ -8,10 +8,9 @@
 	@include flex-center(25px);
 }
 .content > h5 {
-	font-size: 16px;
+	@include regular-text;
 	color: #bbb;
 	letter-spacing: 10%;
-	line-height: 150%;
 }
 .content > h1 {
 	font-size: 48px;

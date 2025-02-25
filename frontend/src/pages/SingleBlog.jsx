@@ -1,10 +1,13 @@
-import BlogDeatils from '../components/BlogDetails/BlogDeatils';
+import { useParams } from 'react-router-dom';
+import BlogDetails from '../components/BlogDetails/BlogDeatils';
 import PopularPost from '../components/Posts/PopularPost/PopularPost';
 
 const SingleBlog = () => {
+	const { id } = useParams();
+
 	return (
 		<>
-			<BlogDeatils />
+			<BlogDetails id={id} />
 			<PopularPost />
 		</>
 	);
