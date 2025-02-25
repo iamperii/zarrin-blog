@@ -1,19 +1,18 @@
 import style from './footer.module.scss';
 import ZarrinLogo from '../../assets/svg/zarrin-logo.svg';
 import { Link } from 'react-router';
-import { CiFacebook } from 'react-icons/ci';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
 	return (
 		<>
-			<div className={style.footer}>
+			<footer className={style.footer}>
 				<div className={style['first-section']}>
 					<div className={style.logo}>
 						<img src={ZarrinLogo} alt="zarrin-logo" />
 						<h1 className={style.title}>Zarrin</h1>
 					</div>
-					<div className={style['nav-items']}>
+					<nav className={style['nav-items']}>
 						<Link to="/" className={style['nav-item']}>
 							Home
 						</Link>
@@ -26,13 +25,13 @@ const Footer = () => {
 						<Link to="/contact" className={style['nav-item']}>
 							Contact Us
 						</Link>
-					</div>
-					<div className={style['social-icons']}>
+					</nav>
+					<nav className={style['social-icons']}>
 						<FaFacebook className={style['social-icon']} />
 						<FaLinkedin className={style['social-icon']} />
 						<FaYoutube className={style['social-icon']} />
 						<FaInstagram className={style['social-icon']} />
-					</div>
+					</nav>
 				</div>
 
 				<div className={style.copyright}>
@@ -40,7 +39,7 @@ const Footer = () => {
 						Copyright Ideapeel Inc © 2023. All Right Reserved
 					</p>
 				</div>
-			</div>
+			</footer>
 		</>
 	);
 };

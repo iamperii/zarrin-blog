@@ -4,7 +4,6 @@
 .footer {
 	padding: $global-padding;
 }
-
 .logo {
 	@include flex-center(15px);
 	align-self: center;
@@ -15,27 +14,25 @@
 .nav-items {
 	@include nav-items;
 }
-
 .first-section {
 	display: flex;
 	flex-direction: column;
 	gap: 43px;
-border-bottom: 2px solid #7C4EE4;
-padding: 20px;
+	border-bottom: 2px solid #7c4ee4;
+	padding: 20px;
 }
 .social-icons {
-	display: flex;
-	align-items: center;
+	@include flex-align;
 	gap: 16px;
 	align-self: center;
 }
 .nav-items {
 	align-self: center;
 }
-.social-icon{
-	color: #7C4EE4;
+.social-icon {
+	color: #7c4ee4;
 }
-.copyright-info{
+.copyright-info {
 	font-size: 16px;
 	text-align: center;
 	margin-top: 40px;
