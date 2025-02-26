@@ -1,0 +1,60 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.blogDetails {
+	padding: 84px 206px;
+	background-color: #fcf9f9;
+}
+.card-content {
+	font-size: 12px;
+	line-height: 150%;
+	font-weight: 600;
+}
+.card-date {
+	font-size: 12px;
+	line-height: 150%;
+	font-weight: 500;
+	color: #999;
+}
+.card-section-first {
+	display: flex;
+	gap: 40px;
+}
+
+.post {
+	@include flex-center(50px);
+}
+.text {
+	@include regular-text;
+	color: #666;
+}
+.quote {
+	font-style: italic;
+	font-size: 24px;
+	line-height: 40px;
+	color: #666;
+}
+.quoteAuthor {
+	@include regular-text-gray-bold;
+}
+.quoteContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-left: 5px solid $primary-color;
+	padding: 19px;
+	margin-left: 52px;
+}
+.img2 {
+	width: 100%;
+	border-radius: 10px;
+	height: 508px;
+}
+.postTitle {
+	font-size: 48px;
+	line-height: 64px;
+	text-align: center;
+}
+.card-intro {
+	@include flex-center(33px);
+}

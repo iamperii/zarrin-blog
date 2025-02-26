@@ -1,11 +1,14 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
+
 .blog-page-title {
 	width: 100%;
 	background-color: #fcf9f9;
 	padding: 75px 300px;
 	text-align: center;
 	@include flex-center(25px);
+	align-items: center;
+
 }
 .content > h5 {
 	@include regular-text;
