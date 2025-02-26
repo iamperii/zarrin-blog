@@ -1,0 +1,22 @@
+@import '../../../styles/_mixins.scss';
+@import '../../../styles/variables';
+
+.about {
+	padding: $global-padding;
+	@include flex-center(80px);
+}
+.regular {
+	@include regular-text-gray;
+	text-align: center;
+}
+.companyImg {
+	width: 100%;
+}
+.about-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 25px;
+	padding: 0px 100px;
+}

@@ -1,0 +1,47 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/variables';
+.work-cards {
+	@include nav-items(100px);
+}
+.work-card {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 400px;
+	padding: 24px;
+	border-radius: 10px;
+	&:hover {
+		transition: all 0.5s;
+		background-color: $primary-color;
+		cursor: pointer;
+		.card-id,
+		.learn-more,
+		.card-title {
+			opacity: 100%;
+			visibility: visible;
+			color: #fff;
+		}
+		.card-desc {
+			color: #f7f6fe;
+			opacity: 70%;
+		}
+	}
+}
+.card-id {
+	color: #666;
+	opacity: 10%;
+	font-size: 72px;
+	line-height: 96px;
+	font-weight: bold;
+}
+.learn-more {
+	visibility: hidden;
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: bold;
+}
+.card-desc {
+	color: #666;
+	opacity: 70%;
+	@include regular-text;
+}

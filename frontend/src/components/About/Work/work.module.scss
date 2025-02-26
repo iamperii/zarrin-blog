@@ -1,0 +1,38 @@
+@import '../../../styles/_mixins.scss';
+@import '../../../styles/variables';
+
+.work {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	align-self: flex-start;
+	gap: 90px;
+}
+.work-regular-bold {
+	@include regular-text-gray-bold;
+	letter-spacing: 10%;
+}
+.work-regular {
+	@include regular-text-gray;
+	opacity: 70%;
+	width: 50%;
+	align-self:flex-end;
+}
+.work-title {
+	width: 40%;
+	font-size: 48px;
+	line-height: 64px;
+	font-weight: bold;
+}
+.head {
+	display: flex;
+	flex-direction: column;
+	gap: 23px;
+}
+.team-work {
+	display: flex;
+	justify-content: space-between;
+}
+.work-cards {
+	@include nav-items(100px);
+}
