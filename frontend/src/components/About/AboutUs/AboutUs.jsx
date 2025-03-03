@@ -22,8 +22,8 @@ const AboutUs = () => {
 					alt="employeers-image"
 					className={style.companyImg}
 				/>
-				<Work />
 			</div>
+			<Work />
 		</>
 	);
 };

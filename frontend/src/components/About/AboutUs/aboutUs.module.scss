@@ -4,6 +4,7 @@
 .about {
 	padding: $global-padding;
 	@include flex-center(80px);
+	align-items: center;
 }
 .regular {
 	@include regular-text-gray;
@@ -13,10 +14,8 @@
 	width: 100%;
 }
 .about-section {
-	display: flex;
-	flex-direction: column;
+	@include flex-center(25px);
 	align-items: center;
 	justify-content: center;
-	gap: 25px;
 	padding: 0px 100px;
 }

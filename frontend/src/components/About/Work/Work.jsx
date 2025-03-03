@@ -25,11 +25,10 @@ const Work = () => {
 						</p>
 					</div>
 				</section>
-							<div className={style['work-cards']}>
-				
-				{about?.map((item) => {
-					return <WorkCard key={item.id} about={item} />;
-				})}
+				<div className={style['work-cards']}>
+					{about?.map((item) => {
+						return <WorkCard key={item.id} about={item} />;
+					})}
 				</div>
 			</div>
 		</>

@@ -1,8 +1,6 @@
 @import '../../../../styles/mixins';
 @import '../../../../styles/variables';
-.work-cards {
-	@include nav-items(100px);
-}
+
 .work-card {
 	display: flex;
 	flex-direction: column;

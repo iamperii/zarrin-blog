@@ -2,6 +2,7 @@
 @import '../../../styles/variables';
 
 .work {
+	padding: $global-padding;
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
