@@ -6,12 +6,14 @@ import { Link } from 'react-router';
 const Header = () => {
 	return (
 		<>
-			<div className={style.header}>
+			<header className={style.header}>
 				<div className={style.logo}>
 					<img src={ZarrinLogo} alt="zarrin-logo" />
-					<h1 className={style.title}>Zarrin</h1>
+					<Link to={'/'} className={style.title}>
+						<h1 className={style.title}>Zarrin</h1>
+					</Link>
 				</div>
-				<div className={style['nav-items']}>
+				<nav className={style['nav-items']}>
 					<Link to="/blogs" className={style['nav-item']}>
 						Blog
 					</Link>
@@ -24,8 +26,8 @@ const Header = () => {
 					<Link to="/contact" className={style['nav-item']}>
 						Contact Us
 					</Link>
-				</div>
-			</div>
+				</nav>
+			</header>
 		</>
 	);
 };

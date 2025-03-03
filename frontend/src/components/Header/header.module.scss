@@ -1,31 +1,35 @@
 @import '../../styles/mixins';
+@import '../../styles/variables';
+
 .header {
-	padding: 20px 100px;
-	display: flex;
-	align-items: center;
+	padding: $global-padding;
+	@include flex-align;
 	justify-content: space-between;
 }
 .logo {
-	display: flex;
-	align-items: center;
-	gap: 15px;
+	@include nav-items(15px);
 }
 .nav-items {
-	@include nav-items(58px)
-
+	@include nav-items(58px);
 }
 .nav-item {
-	@include nav-item
+	@include nav-item;
 }
 .nav-item:nth-child(4) {
-	background-color: #7c4ee4;
+	background-color: $primary-color;
 	color: #fff;
 	border-radius: 8px;
 	padding: 16px 40px;
-	&:active {
-		color: #fff;
+	&:focus {
+		color: $primary-color;
+		background-color: #fff;
+		border: 1px solid $primary-color;
 	}
 }
 .nav-item:focus {
-	color: #7c4ee4;
+	color: $primary-color;
+}
+.title {
+	text-decoration: none;
+	color: $primary-color;
 }
