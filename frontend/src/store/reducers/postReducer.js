@@ -3,7 +3,7 @@ import { fetchAllPosts } from '../actions/postAction.js';
 
 const initialState = {
 	posts: [],
-	loading: false, // Changed from `null` to `false` for better state management
+	loading: false,
 	error: null,
 };
 
@@ -14,15 +14,15 @@ const postsSlice = createSlice({
 	extraReducers: (builder) => {
 		builder
 			.addCase(fetchAllPosts.pending, (state) => {
-				state.loading = true; // Set loading to true when request starts
-				state.error = null; // Reset error when starting a new request
+				state.loading = true;
+				state.error = null;
 			})
 			.addCase(fetchAllPosts.fulfilled, (state, action) => {
-				state.loading = false; // Set loading to false when request is successful
+				state.loading = false;
 				state.posts = action.payload;
 			})
 			.addCase(fetchAllPosts.rejected, (state, action) => {
-				state.loading = false; // Set loading to false when request fails
+				state.loading = false;
 				state.error = action.payload;
 			});
 	},
