@@ -1,0 +1,22 @@
+@use '../../../styles/mixins' as *;
+@use '../../../styles/variables' as *;
+
+.postHead {
+	display: flex;
+	justify-content: space-between;
+}
+.viewBtn {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	background-color: $primary-color;
+	&:hover {
+		cursor: pointer;
+		color: #fff;
+		transition: all 0.3s;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}

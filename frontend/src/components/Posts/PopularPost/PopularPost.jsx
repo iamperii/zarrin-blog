@@ -21,7 +21,7 @@ const PopularPost = () => {
 					</Link>
 				</section>
 				<div className={style.cards}>
-					{posts.slice(0, 6).map((post) => (
+					{posts.slice(2, 5).map((post) => (
 						<PostCard key={post.id} post={post} />
 					))}
 				</div>
