@@ -43,7 +43,7 @@ Ensure you have the following installed on your machine:
    ```bash
    cd frontend
    npm install
-4. Start the development server:
+4. Start the development server: <br/>
    In the Frontend folder
    ```bash
    cd frontend
