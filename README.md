@@ -45,22 +45,13 @@ Ensure you have the following installed on your machine:
    npm install
 4. Start the development server:
  <br/>
-<ul>
-  - In the Frontend folder:
-   ```bash
-    cd frontend
-    npm run dev
-  ```
-  </li>
-  - In the mock-api folder:
+  - In the *Frontend* folder:
+   ``` bash
+   cd frontend
+   npm run dev
+```
+  - In the *mock-api* folder:
     ```bash
     cd mock-api
     json-server --watch db.json --port 5000
-```
-  </li>
-</ul>
- 
-
-
-
-
+    ```
