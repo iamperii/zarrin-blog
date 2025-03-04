@@ -1,12 +1,13 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
+
 .subscribe {
-	background-color: #7c4ee4;
-	color: white;
+	background-color: $primary-color;
+	color: #fff;
 	width: 100%;
 	padding: 100px 10vw;
-
 	@include flex-center(48px);
+	align-items: center;
 	position: relative;
 	box-sizing: border-box;
 }
@@ -39,23 +40,12 @@
 	}
 	&:active {
 		transform: scale(0.95);
-		//nese de
 	}
 }
 .subscribe-info {
 	line-height: 28px;
 	font-size: 16px;
-	color: #bbbbbb;
+	color: #bbb;
 	width: 45%;
 	text-align: center;
-}
-.vector {
-	position: absolute;
-	width: 40%;
-	left: -60px;
-	// height: 150px;
-	top: -300px;
-	z-index: 0;
-	// transform: translateX(50%);
-	clip-path: inset(63% 23% 0 0);
 }

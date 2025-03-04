@@ -1,0 +1,69 @@
+.work {
+  padding: 20px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  gap: 90px;
+}
+
+.work-regular-bold {
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+  font-weight: bold;
+  letter-spacing: 10%;
+}
+
+.work-regular {
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+  opacity: 70%;
+  width: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.work-title {
+  width: 40%;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 23px;
+}
+
+.team-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+}

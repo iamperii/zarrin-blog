@@ -1,0 +1,54 @@
+.contact-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 21px;
+}
+
+.contact-card {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 38px 32px;
+  text-align: center;
+}
+.contact-card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: rgba(187, 136, 191, 0.835) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+          box-shadow: rgba(187, 136, 191, 0.835) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.icon {
+  background-color: #7c4ee4;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  color: white;
+}
+
+.contact-card-name {
+  color: #7c4ee4;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact-card-desc {
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+}

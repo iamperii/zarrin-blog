@@ -42,10 +42,17 @@
   border-radius: 8px;
   padding: 16px 40px;
 }
-.nav-item:nth-child(4):active {
-  color: #fff;
+.nav-item:nth-child(4):focus {
+  color: #7c4ee4;
+  background-color: #fff;
+  border: 1px solid #7c4ee4;
 }
 
 .nav-item:focus {
+  color: #7c4ee4;
+}
+
+.title {
+  text-decoration: none;
   color: #7c4ee4;
 }

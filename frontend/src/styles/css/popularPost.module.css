@@ -1,0 +1,53 @@
+.popularPost {
+  padding: 20px 100px;
+  background-color: #f8f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 64px;
+}
+
+.postHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.viewBtn {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #7c4ee4;
+}
+.viewBtn:hover {
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.viewBtn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.loading {
+  text-align: center;
+}

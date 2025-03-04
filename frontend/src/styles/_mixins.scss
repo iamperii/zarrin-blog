@@ -1,7 +1,11 @@
 @mixin flex-center($gap: 15px) {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	gap: $gap;
+}
+@mixin flex-align {
+	display: flex;
+	align-items: center;
 }
 @mixin nav-item {
 	color: black;
@@ -11,4 +15,21 @@
 	display: flex;
 	align-items: center;
 	gap: $gap;
+}
+@mixin regular-text {
+	font-size: 16px;
+	line-height: 150%;
+}
+
+@mixin regular-text-gray-bold {
+	font-size: 16px;
+	line-height: 150%;
+	color: #666;
+	font-weight: bold;
+}
+
+@mixin regular-text-gray {
+	font-size: 16px;
+	line-height: 150%;
+	color: #666;
 }

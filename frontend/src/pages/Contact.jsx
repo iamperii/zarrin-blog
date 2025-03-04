@@ -1,9 +1,15 @@
-import React from 'react'
+import ContactForm from '../components/Contact/ContactForm/ContactForm';
+import ContactHero from '../components/Contact/ContactHero/ContactHero';
+import Map from '../components/Contact/Map/Map';
 
 const Contact = () => {
 	return (
-		<div>Contact</div>
-	)
-}
+		<>
+			<ContactHero />
+			<Map />
+			<ContactForm />
+		</>
+	);
+};
 
-export default Contact
+export default Contact;

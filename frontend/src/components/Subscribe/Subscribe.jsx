@@ -1,8 +1,8 @@
 import style from './subscribe.module.scss';
+
 const Subscribe = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log('clicked');
 	};
 	return (
 		<>
@@ -20,7 +20,6 @@ const Subscribe = () => {
 					Get a response tomorrow if you submit by 9pm today. If we received
 					after 9pm will get a reponse the following day.
 				</p>
-				
 			</div>
 		</>
 	);
