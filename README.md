@@ -4,7 +4,6 @@
 
 ## Features
 
-- Product management (Add, Edit, Delete)
 - Responsive design using SCSS
 - State management with Redux
 - Fetching data from a mock API using `db.json`
@@ -19,9 +18,7 @@
   - React Router (for routing)
 
 - **Backend:**
-  - Node.js
-  - Express.js
-  - Mock API with `db.json` (No MongoDB used)
+  - Mock API with `db.json` 
 
 ## Getting Started
 
