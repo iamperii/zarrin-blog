@@ -1,0 +1,52 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.contactForm {
+	padding: $global-padding;
+	background-color: #f7f6fe;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.formBox {
+	width: 768px;
+	@include flex-center(22px);
+	align-self: center;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 70px 60px 50px;
+	z-index: 100;
+	align-self: center;
+}
+.formRow {
+	@include flex-center(10px);
+	width: 100%;
+	input,
+	textarea {
+		padding: 8px;
+		border: 1px solid #c4c4c4;
+	}
+	input:focus {
+		border: none;
+		border-color: #007bff;
+		box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+	}
+}
+.formGrid {
+	@include nav-items(20px);
+	justify-content: space-between;
+}
+.send-msg-btn {
+	width: 177px;
+	padding: 21px;
+	background-color: $primary-color;
+	color: white;
+	text-align: center;
+	align-self: center;
+	&:active {
+		transform: scale(0.95);
+	}
+	&:hover {
+		border: none;
+	}
+}

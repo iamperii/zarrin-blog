@@ -1,0 +1,22 @@
+@use '../../../styles/_mixins' as *;
+@use '../../../styles/variables' as *;
+
+.contact-hero {
+	padding: 50px;
+	background-color: #f8f5f5;
+	@include flex-center(100px);
+	align-items: center;
+	justify-content: space-between;
+}
+.contact-title {
+	font-size: 48px;
+	line-height: 64px;
+	font-weight: bold;
+}
+.regular {
+	@include regular-text-gray;
+}
+.contact-head{
+	@include flex-center(16px);
+	text-align: center;
+}
