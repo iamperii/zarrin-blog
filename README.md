@@ -50,6 +50,7 @@ Ensure you have the following installed on your machine:
    npm run dev
 <br/>
   In the mock-api folder
+
   ```bash
   cd mock-api
   json-server --watch db.json --port 5000
