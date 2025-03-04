@@ -48,6 +48,7 @@ Ensure you have the following installed on your machine:
    ```bash
    cd frontend
    npm run dev
+<br/>
   In the mock-api folder
   ```bash
   cd mock-api
